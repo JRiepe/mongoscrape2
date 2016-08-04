@@ -1,0 +1,93 @@
+
+<!-- this is index.handlebars -->
+<div class=container>
+  <div class="jumbotron">
+        <h1>Mongo Scraper</h1>
+        <h3>Read and Comment on National Enquirer Articles!</h3>
+  </div>
+<div class="row"> <!-- Left Column -->
+  <div class="col-xs-6 col-md-3">
+          
+            <form method="post" type="text" action="/addComment/{{id}}"  >
+            
+                <div class="textDivs">
+                      
+                    <label>
+                      <textarea class="form-control" id="comment" name="comment" wrap="soft" type="text" placeholder="comment here" required></textarea>
+                    </label>
+                 
+                
+                
+                    <div class="buttonDiv">    
+                          <button  class="glyphicon glyphicon-plus" type="submit" value="submit
+                          "></button>
+                    </div>
+                </div>
+            </form>
+  </div> <!-- end Left Column -->
+
+
+  <div class="col-xs-6 col-md-6"> <!-- Middle Column -->
+          <div class="textDivs">
+              <div class="artDiv">
+                      <h3>Article: {{articleNum}} of {{totalArticles}}</h3>
+                      <h4>{{artTitle}}</h4>
+                      <hr>
+                      <h5>{{artSubtitle}}</h5>
+                      <hr>
+                      <a href={{urlLink}} target="_blank">Go to Article</a>
+                      <br>
+              </div>
+            
+
+                      
+              <div class="buttonDiv">   
+                  <tr>
+                      <td>
+                          <form method='GET' action="/lastArticle">
+                              <button id="leftArrow" class="glyphicon glyphicon-arrow-left"></button>
+                          </form>
+                      </td>
+                      <td>
+                          <form method='GET' action="/nextArticle">
+                              <button id="rightArrow" class="glyphicon glyphicon-arrow-right"></button>
+                          </form>
+                      </td>
+                    
+                  </tr>
+        
+              </div>
+          </div>                 
+  </div><!-- end Middle Column -->
+
+
+  <div class="col-xs-6 col-md-3"> <!-- Right Column -->
+    
+            <div class="textDivs">
+                  <div id="commentArea">
+                      <h5 id="textLeft">{{theComment}}</h5>
+                  </div>
+
+                  <div>
+                      <form method='POST' action="/delComment/{{id}}">
+                            
+                            <div class='buttonDiv'>
+                                      <button type="submit" id="delComment" name="delComment" class="glyphicon glyphicon-minus"></button>
+                            </div> <!-- end buttonDiv -->
+
+                      </form>
+                  </div>
+            </div>
+
+  </div> <!-- end Right Column -->
+
+</div> <!-- end container -->
+
+  
+
+<br><br><br>
+<footer>
+  <h6>&#169 Copyright 2016 John D. Riepe</h6>
+</footer>
+
+

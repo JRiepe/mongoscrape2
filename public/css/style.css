@@ -1,0 +1,206 @@
+html  {
+  background-color: #000000;
+  margin: 0 auto;
+  
+}
+
+.jumbotron  {
+  background-color: #000000;
+  color: greenyellow;
+  height: auto;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.container {
+  
+  background-color: #666666;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding:  0px;
+  width: auto;
+  height: auto;
+  color: black;
+  background-image: url('/images/natenq.jpg');
+}
+
+.row {
+  margin: 0 auto;
+  min-height: 300px;
+  max-width: 800px;
+  background-color: transparent;
+
+}
+ #commentArea, .artDiv {
+  margin: 0 auto;
+  min-height: 240px;
+  max-height: 240px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+  text-align: center;
+ }
+
+ textarea {
+  margin: 0 auto;
+  min-height: 230px;
+  max-height: 230px;
+  background-color: inherit!important;
+  padding: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+  text-align: left;
+  outline: transparent !important;
+}
+
+
+.textDivs {
+  margin: 0 auto;
+  text-align: center;
+  padding:  5px;
+  padding-top: 10px;
+  min-height: 300px;
+  max-height: 300px;
+  border-style: ridge;
+  border-color: #000000;
+  border-width: 5px;
+  background-color: #F1F1D4;
+  color: #000000;
+  word-break: normal;
+  word-wrap: normal;
+  display: block;
+  overflow-x: wrap;
+  
+  overflow-y: auto;
+}
+
+
+#leftArrow {
+  /* position: relative; */
+  float: left;
+  display: block;
+  margin: 0 auto;
+  margin-left: 20%;
+}
+
+#rightArrow {
+  /*position: relative;*/
+  float: right;
+  display: block;
+  margin: 0 auto;
+  margin-right: 20%;
+}
+
+.buttonDiv  {
+  
+  padding: 0px;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+  position: static;
+}
+
+#textLeft {
+  text-align: left;
+}
+
+h1 {
+  font-size: 50px;
+  
+}
+
+h2 {
+  font-size: 30px;
+
+}
+
+
+
+footer {
+  background-color: #000000;
+  color: wheat;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+
+}
+
+   
+
+    
+button {
+	position: absolute;
+  bottom: 2px;
+  background-color:  greenyellow;
+  color: #000000;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: black; 
+  width: 70px;
+  height: 30px;
+	margin: 5px;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none
+}
+
+/* visited link */
+a:visited {
+    color: maroon;
+    text-decoration: none
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+    text-decoration: none
+
+}
+
+/* selected link */
+a:active {
+    color: maroon;
+    text-decoration: none
+}
+
+
+@media only screen and (min-width: 400px) {
+  .container {
+    margin: 0 auto;
+    max-width: 350;
+    position: relative;
+    text-align: center; 
+  }
+
+  .textDivs {
+    column-width: 300px;
+
+  }
+}
+
+
+@media only screen and (min-width: 850px) {
+  
+  .container  {
+    max-width: 800;
+    position: relative;
+    
+  }
+
+  .textDivs {
+    column-width: auto;
+
+  }
+  
+}
+
+
+
